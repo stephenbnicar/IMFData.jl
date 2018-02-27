@@ -4,7 +4,7 @@
 
 [![Travis](https://travis-ci.org/stephenbnicar/IMFData.jl.svg?branch=master)](https://travis-ci.org/stephenbnicar/IMFData.jl)
 [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/stephenbnicar/IMFData.jl?branch=master&svg=true)](https://ci.appveyor.com/project/stephenbnicar/imfdata-jl)
-[![Coverage Status](https://coveralls.io/repos/stephenbnicar/IMFData.jl/badge.svg?branch=master&service=github)](https://coveralls.io/github/stephenbnicar/IMFData.jl?branch=master)
+[[![Coverage Status](https://coveralls.io/repos/github/stephenbnicar/IMFData.jl/badge.svg?branch=master)](https://coveralls.io/github/stephenbnicar/IMFData.jl?branch=master)
 [![codecov.io](http://codecov.io/github/stephenbnicar/IMFData.jl/coverage.svg?branch=master)](http://codecov.io/github/stephenbnicar/IMFData.jl?branch=master)
 
 ## Installation
