@@ -2,10 +2,9 @@
 
 *A Julia interface for retrieving data from the International Monetary Fund (IMF) Data Services API.*
 
-[![Travis](https://travis-ci.org/stephenbnicar/IMFData.jl.svg?branch=master)](https://travis-ci.org/stephenbnicar/IMFData.jl)
-[![AppVeyor](https://ci.appveyor.com/api/projects/status/github/stephenbnicar/IMFData.jl?branch=master&svg=true)](https://ci.appveyor.com/project/stephenbnicar/imfdata-jl)
-[[![Coverage Status](https://coveralls.io/repos/github/stephenbnicar/IMFData.jl/badge.svg?branch=master)](https://coveralls.io/github/stephenbnicar/IMFData.jl?branch=master)
-[![codecov.io](http://codecov.io/github/stephenbnicar/IMFData.jl/coverage.svg?branch=master)](http://codecov.io/github/stephenbnicar/IMFData.jl?branch=master)
+| **Repo Status** | **Build Status** | **Coverage** |
+|:---------------:|:----------------:|:------------:|
+|[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.][repo-img]][repo-url] | [![Travis][travis-img]][travis-url] [![AppVeyor][appveyor-img]][appveyor-url] | [![Coveralls][coveralls-img]][coveralls-url] [![codecov.io][codecov-img]][codecov-url] |
 
 ## Installation
 
@@ -94,3 +93,20 @@ With multiple requests:
     Time Period: 2015 to 2016
     Data: 8 x 2 DataFrame
 ```
+## Disclaimer
+IMFData.jl is not affiliated with, officially maintained, or otherwise supported by the International Monetary Fund.
+
+[travis-img]: https://travis-ci.org/stephenbnicar/IMFData.jl.svg?branch=master
+[travis-url]: https://travis-ci.org/stephenbnicar/IMFData.jl
+
+[appveyor-img]: https://ci.appveyor.com/api/projects/status/github/stephenbnicar/IMFData.jl?branch=master&svg=true
+[appveyor-url]: https://ci.appveyor.com/project/stephenbnicar/imfdata-jl
+
+[coveralls-img]: https://coveralls.io/repos/github/stephenbnicar/IMFData.jl/badge.svg?branch=master
+[coveralls-url]: https://coveralls.io/github/stephenbnicar/IMFData.jl?branch=master
+
+[codecov-img]: http://codecov.io/github/stephenbnicar/IMFData.jl/coverage.svg?branch=master
+[codecov-url]: http://codecov.io/github/stephenbnicar/IMFData.jl?branch=master
+
+[repo-img]: http://www.repostatus.org/badges/latest/active.svg
+[repo-url]: http://www.repostatus.org/#active
