@@ -99,8 +99,8 @@ IMFData.jl is not affiliated with, officially maintained, or otherwise supported
 [travis-img]: https://travis-ci.org/stephenbnicar/IMFData.jl.svg?branch=master
 [travis-url]: https://travis-ci.org/stephenbnicar/IMFData.jl
 
-[appveyor-img]: https://ci.appveyor.com/api/projects/status/github/stephenbnicar/IMFData.jl?branch=master&svg=true
-[appveyor-url]: https://ci.appveyor.com/project/stephenbnicar/imfdata-jl
+[appveyor-img]: https://ci.appveyor.com/api/projects/status/x3qvtuuodo24pam3/branch/master?svg=true
+[appveyor-url]: https://ci.appveyor.com/project/stephenbnicar/imfdata-jl/branch/master
 
 [coveralls-img]: https://coveralls.io/repos/github/stephenbnicar/IMFData.jl/badge.svg?branch=master
 [coveralls-url]: https://coveralls.io/github/stephenbnicar/IMFData.jl?branch=master
