@@ -1,5 +1,5 @@
 using IMFData
-using Base.Test
+using Test
 
 @testset "get datasets" begin
     ds = get_imf_datasets()

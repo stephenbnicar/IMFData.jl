@@ -2,9 +2,10 @@ __precompile__()
 
 module IMFData
 
-using  HTTP
-using  JSON
-using  DataFrames
+using HTTP
+using JSON
+using Dates
+using DataFrames
 import Base.show
 
 const API_URL = "http://dataservices.imf.org/REST/SDMX_JSON.svc"

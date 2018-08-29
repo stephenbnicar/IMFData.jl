@@ -22,7 +22,7 @@ function get_imf_datasets()
         push!(dbname, dict["Name"]["#text"])
     end
     datasets = DataFrame(dataset_id = dbid, dataset_name = dbname)
-    sort!(datasets, cols = [:dataset_id])
+    sort!(datasets, [:dataset_id])
 
     return datasets
 end
