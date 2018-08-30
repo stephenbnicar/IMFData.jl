@@ -1,6 +1,6 @@
 # IMFData
 
-*A Julia interface for retrieving data from the International Monetary Fund (IMF) Data Services API.*
+*A Julia interface for retrieving data from the International Monetary Fund (IMF).*
 
 | **Repo Status** | **Build Status** | **Coverage** |
 |:---------------:|:----------------:|:------------:|
@@ -8,8 +8,8 @@
 
 ## Installation
 
-```julia
-    Pkg.clone("https://github.com/stephenbnicar/IMFData.jl.git")
+```julia-repl
+    (v1.0) pkg> https://github.com/stephenbnicar/IMFData.jl
 ```
 
 ## Usage
