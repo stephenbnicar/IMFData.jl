@@ -8,8 +8,8 @@
 
 ## Installation
 
-```julia-repl
-    (v1.0) pkg> https://github.com/stephenbnicar/IMFData.jl
+```julia
+    (v1.0) pkg> add https://github.com/stephenbnicar/IMFData.jl
 ```
 
 ## Usage
