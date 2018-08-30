@@ -133,7 +133,7 @@ function get_series(query::String, retries::Int)
     else
         response = HTTP.get(query)
         content_type = Dict(response.headers)["Content-Type"]
-        if contains(content_type, "json")
+        if occursin("json", content_type)
             return response
         else
             return get_series(query, retries-1)
@@ -193,6 +193,6 @@ function single_observation(od::Dict, frequency)
     end
     date = Date(year, month, 1)
     # Get the observation value
-    value = float(od["@OBS_VALUE"])
+    value = parse(Float64, od["@OBS_VALUE"])
     return (date, value)
 end

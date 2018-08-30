@@ -5,16 +5,16 @@ using CSV
 
 datasets = get_imf_datasets()
 # Use @where macro from DataFramesMeta to filter based on dataset name
-ds_ifs = @where(datasets, contains.(:dataset_id, "IFS"))
-ds_dot = @where(datasets, contains.(:dataset_id, "DOT"))
+ds_ifs = @where(datasets, occursin.("IFS", :dataset_id))
+ds_dot = @where(datasets, occursin.("DOT", :dataset_id))
 
 ifs_structure  = get_imf_datastructure("IFS")
 # Search for GDP indicators
 ifs_indicators = ifs_structure["Parameter Values"]["CL_INDICATOR_IFS"]
 gdp_indicators = @where(ifs_indicators,
-                 contains.(:description, "Gross Domestic Product"),
-                 contains.(:description, "Domestic Currency"))
-CSV.write("ifs_gdp_indicators.csv", gdp_indicators; delim='\t')
+                 occursin.("Gross Domestic Product", :description),
+                 occursin.("Domestic Currency", :description))
+# CSV.write("ifs_gdp_indicators.csv", gdp_indicators; delim='\t')
 
 indic = "NGDP_SA_XDC"
 area  = "US"
