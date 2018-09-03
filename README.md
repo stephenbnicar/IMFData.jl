@@ -9,7 +9,7 @@
 ## Installation
 
 ```julia
-    (v1.0) pkg> add https://github.com/stephenbnicar/IMFData.jl
+    (v1.0) pkg> add IMFData 
 ```
 
 ## Usage
