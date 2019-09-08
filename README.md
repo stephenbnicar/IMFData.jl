@@ -4,7 +4,7 @@
 
 | **Repo Status** | **Build Status** | **Coverage** |
 |:---------------:|:----------------:|:------------:|
-|[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.][repo-img]][repo-url] | [![Travis][travis-img]][travis-url] [![AppVeyor][appveyor-img]][appveyor-url] | [![Coveralls][coveralls-img]][coveralls-url] [![codecov.io][codecov-img]][codecov-url] |
+|[![][repo-img]][repo-url] | [![Travis][travis-img]][travis-url] [![AppVeyor][appveyor-img]][appveyor-url] | [![codecov.io][codecov-img]][codecov-url] |
 
 ## Installation
 
@@ -108,5 +108,5 @@ IMFData.jl is not affiliated with, officially maintained, or otherwise supported
 [codecov-img]: http://codecov.io/github/stephenbnicar/IMFData.jl/coverage.svg?branch=master
 [codecov-url]: http://codecov.io/github/stephenbnicar/IMFData.jl?branch=master
 
-[repo-img]: http://www.repostatus.org/badges/latest/active.svg
-[repo-url]: http://www.repostatus.org/#active
+[repo-img]: http://www.repostatus.org/badges/latest/inactive.svg
+[repo-url]: http://www.repostatus.org/#inactive
