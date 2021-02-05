@@ -3,7 +3,7 @@ using Test
 
 @testset "get datasets" begin
     ds = get_imf_datasets()
-    @test any(occursin.("IFS", ds[:dataset_id]))
+    @test any(occursin.("IFS", ds.dataset_id))
 end
 
 @testset "get datastructure" begin

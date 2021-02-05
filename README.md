@@ -2,14 +2,13 @@
 
 *A Julia interface for retrieving data from the International Monetary Fund (IMF).*
 
-| **Repo Status** | **Build Status** | **Coverage** |
-|:---------------:|:----------------:|:------------:|
-|[![][repo-img]][repo-url] | [![Travis][travis-img]][travis-url] [![AppVeyor][appveyor-img]][appveyor-url] | [![codecov.io][codecov-img]][codecov-url] |
+[![][repo-img]][repo-url]
+[![][ci-img]][ci-url]
 
 ## Installation
 
 ```julia
-    (v1.0) pkg> add IMFData 
+    (v1.x) pkg> add IMFData
 ```
 
 ## Usage
@@ -96,17 +95,9 @@ With multiple requests:
 ## Disclaimer
 IMFData.jl is not affiliated with, officially maintained, or otherwise supported by the International Monetary Fund.
 
-[travis-img]: https://travis-ci.org/stephenbnicar/IMFData.jl.svg?branch=master
-[travis-url]: https://travis-ci.org/stephenbnicar/IMFData.jl
-
-[appveyor-img]: https://ci.appveyor.com/api/projects/status/x3qvtuuodo24pam3/branch/master?svg=true
-[appveyor-url]: https://ci.appveyor.com/project/stephenbnicar/imfdata-jl/branch/master
-
-[coveralls-img]: https://coveralls.io/repos/github/stephenbnicar/IMFData.jl/badge.svg?branch=master
-[coveralls-url]: https://coveralls.io/github/stephenbnicar/IMFData.jl?branch=master
-
-[codecov-img]: http://codecov.io/github/stephenbnicar/IMFData.jl/coverage.svg?branch=master
-[codecov-url]: http://codecov.io/github/stephenbnicar/IMFData.jl?branch=master
 
 [repo-img]: http://www.repostatus.org/badges/latest/inactive.svg
 [repo-url]: http://www.repostatus.org/#inactive
+
+[ci-img]: https://github.com/stephenbnicar/IMFData.jl/workflows/CI/badge.svg
+[ci-url]: https://github.com/stephenbnicar/IMFData.jl/actions?workflow=CI
