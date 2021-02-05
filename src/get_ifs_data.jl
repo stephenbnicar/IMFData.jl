@@ -149,8 +149,8 @@ function parse_series_dict(d::Dict, frequency, startyear, endyear)
 
     if haskey(d, "Obs")
         series = extract_observations(d["Obs"], frequency)
-        actual_startyear = Dates.year(series[:date][1])
-        actual_endyear   = Dates.year(series[:date][end])
+        actual_startyear = Dates.year(series.date[1])
+        actual_endyear   = Dates.year(series.date[end])
         out = IfsSeries(area, indicator, frequency, actual_startyear, actual_endyear,
             time_format, unit_mult, series)
     else
