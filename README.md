@@ -2,9 +2,8 @@
 
 *A Julia interface for retrieving data from the International Monetary Fund (IMF).*
 
-| **Repo Status** | **Build Status** |
-|:---------------:|:----------------:|
-|[![][repo-img]][repo-url] | [![Travis][travis-img]][travis-url] [![AppVeyor][appveyor-img]][appveyor-url] |
+[![][repo-img]][repo-url]
+[![][ci-img]][ci-url]
 
 ## Installation
 
@@ -99,3 +98,6 @@ IMFData.jl is not affiliated with, officially maintained, or otherwise supported
 
 [repo-img]: http://www.repostatus.org/badges/latest/inactive.svg
 [repo-url]: http://www.repostatus.org/#inactive
+
+[ci-img]: https://github.com/stephenbnicar/IMFData.jl/workflows/CI/badge.svg
+[ci-url]: https://github.com/stephenbnicar/IMFData.jl/actions?workflow=CI
