@@ -2,7 +2,6 @@
 
 *A Julia interface for retrieving data from the International Monetary Fund (IMF).*
 
-[![][repo-img]][repo-url]
 [![][ci-img]][ci-url]
 
 ## Installation
