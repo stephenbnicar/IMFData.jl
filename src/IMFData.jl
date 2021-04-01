@@ -11,14 +11,14 @@ const API_URL = "http://dataservices.imf.org/REST/SDMX_JSON.svc"
 export
     IMFSeries,
     imf_datasets,
-    get_imf_datastructure,
+    imf_datastructure,
     get_ifs_data
 
 
 abstract type IMFSeries end
 
 include("imf_datasets.jl")
-include("get_imf_datastructure.jl")
+include("imf_datastructure.jl")
 include("get_ifs_data.jl")
 
 end # module

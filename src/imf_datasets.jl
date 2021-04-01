@@ -1,5 +1,5 @@
 """
-    imf_datasets() -> `DataFrame`
+    imf_datasets() -> DataFrame
 
 Return the list of datasets that are accessible from the IMF API, along with their dataset IDs, as a `DataFrame`.
 """

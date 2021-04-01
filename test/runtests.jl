@@ -2,13 +2,13 @@ using IMFData
 using Test
 
 @testset "get datasets" begin
-    ds = get_imf_datasets()
-    @test any(occursin.("IFS", ds.dataset_id))
+    ds = imf_datasets()
+    @test any(occursin.("IFS", ds.value))
 end
 
 @testset "get datastructure" begin
-    dstr = get_imf_datastructure("IFS")
-    @test haskey(dstr, "Parameter Names")
+    dstr = imf_datastructure("IFS")
+    @test haskey(dstr, "dimensions")
 end
 
 @testset "get data" begin
