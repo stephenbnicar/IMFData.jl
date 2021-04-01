@@ -15,7 +15,7 @@
 **Get a list of datasets accessible from the API:**
 
 ```julia
-    get_imf_datasets()
+    imf_datasets()
 ```
 > **Note:** While this function returns a list of all available datasets, currently the module only supports data requests from the International Financial Statistics (IFS) dataset.
 
@@ -23,15 +23,15 @@
 **Get the list of parameters ("dimensions") for a dataset and their values:**
 
 ```julia
-    get_imf_datastructure(database_id::String)
+    imf_datastructure(database_id::String)
 ```
 
 Example:
 ```julia
-    julia> ifs_structure = get_imf_datastructure("IFS")
+    julia> ifs_structure = imf_datastructure("IFS")
     Dict{String,Any} with 2 entries:
-      "Parameter Names"  => 5×2 DataFrames.DataFrame
-      "Parameter Values" => Dict Any → Any with 5 entries
+      "dimensions"  => 5×2 DataFrames.DataFrame
+      "values" => Dict Any → Any with 5 entries
 ```
 
 **Retrieve data from the IFS dataset**
