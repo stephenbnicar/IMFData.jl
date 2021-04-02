@@ -1,5 +1,5 @@
 """
-    imf_datastructure(dataset_id::String) -> DataFrame
+    imf_datastructure(dataset_id::String) -> Dict
 
 Return parameter ("dimension") list and parameter values for `dataset_id`.
 """
@@ -12,6 +12,8 @@ function imf_datastructure(dataset_id::String)
     end
     response_body = String(response.body)
     response_json = JSON.parse(response_body)
+    annvec = response_json["Structure"]["KeyFamilies"]["KeyFamily"]["Annotations"]["Annotation"]
+    annotations = get_annotations(annvec)
     structure = response_json["Structure"]["CodeLists"]["CodeList"]
 
     # Get the overall structure
@@ -26,7 +28,7 @@ function imf_datastructure(dataset_id::String)
     parameter_table = DataFrame(value = parameter_id, description = parameter_name)
 
     datastructure = Dict("dimensions" => parameter_table,
-        "values" => parameter_values)
+        "values" => parameter_values, "annotations" => annotations)
 end
 
 
@@ -47,4 +49,12 @@ function get_parameter_values(param)
     end
     codelist = DataFrame(value = codevals, description = codedescs)
     return codelist
+end
+
+function get_annotations(annvec)
+    annotations = Dict()
+    for dict in annvec
+        annotations[dict["AnnotationTitle"]] = dict["AnnotationText"]["#text"]
+    end
+    return annotations
 end
