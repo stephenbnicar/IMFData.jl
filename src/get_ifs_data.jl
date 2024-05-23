@@ -93,7 +93,7 @@ function get_ifs_data(area::String, indicator::String, frequency::String, starty
     dataseries = response_json["CompactData"]["DataSet"]
 
     if haskey(dataseries, "Series")
-        out = parse_series_dict(dataseries["Series"], frequency, startyear, endyear)
+        out = parse_series_dict("IFS", dataseries["Series"], frequency, startyear, endyear)
     else
         out = IfsNotDefined(area, indicator, startyear, endyear)
     end
@@ -141,7 +141,7 @@ function get_series(query::String, retries::Int)
     end
 end
 
-function parse_series_dict(d::Dict, frequency, startyear, endyear)
+function parse_series_dict(dataset::String, d::Dict, frequency, startyear, endyear)
     area      = d["@REF_AREA"]
     indicator = d["@INDICATOR"]
     time_format = d["@TIME_FORMAT"]
@@ -151,10 +151,10 @@ function parse_series_dict(d::Dict, frequency, startyear, endyear)
         series = extract_observations(d["Obs"], frequency)
         actual_startyear = Dates.year(series.date[1])
         actual_endyear   = Dates.year(series.date[end])
-        out = IfsSeries(area, indicator, frequency, actual_startyear, actual_endyear,
+        out = ImfSeries(dataset, area, indicator, "", frequency, actual_startyear, actual_endyear,
             time_format, unit_mult, series)
     else
-        out = IfsNoData(area, indicator, frequency, startyear, endyear)
+        out = ImfNoData(dataset, area, indicator, frequency, startyear, endyear)
     end
 end
 
